@@ -5,7 +5,7 @@ name : 'counter',
 initialState :{ counter: 0},
 reducers:{
     increment(state,action){
-       state.counter= state.counter +1 
+       state.counter++
     },
     decrement(state,action){
         state.counter= state.counter -1 
@@ -14,7 +14,7 @@ reducers:{
     },
     addBy(state,action){
 
-        state.counter= state.counter +1 
+        state.counter= state.counter +action.payload
 
     }
 }
@@ -23,5 +23,7 @@ reducers:{
 })
 export const actions = counterSlice.actions;
 const store = configureStore({
-    reducer : counterSlice.reducer
+    reducer : counterSlice.reducer,
 }) 
+
+export default store
