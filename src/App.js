@@ -12,6 +12,10 @@ function App() {
   
     dispatch({type : 'DIC'})
   }
+
+  const addvalue=()=>{
+    dispatch({type: "ADD10"})
+  }
   return (
     <div className="App">
       <h1>Counter APP</h1>
@@ -19,6 +23,8 @@ function App() {
       <button onClick={increment}>increment</button>
      
     <button onClick={decrement}>decrement</button>
+    <button onClick={addvalue}>Add 10</button>
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { createStore } from 'redux'
- const reducerFn = (state={counter:99},action) =>{
+ const reducerFn = (state={counter:0},action) =>{
 
     // sychronous Function
     // we should not mutate the original state
@@ -11,6 +11,10 @@ import { createStore } from 'redux'
     if (action.type==='DIC'){
 
         return {counter: state.counter - 1}
+    }
+    if (action.type==='ADD10'){
+
+        return {counter: state.counter + 10}
     }
     return state
 
