@@ -1,0 +1,10 @@
+
+git init
+git add .
+git status
+git commit -m “Added Increment decrement”
+git remote add origin https://github.com/NeerajProject/REDUX_LEARNING.git
+git push -u origin first_app
+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
+
+git push -u origin first_app
